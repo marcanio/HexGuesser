@@ -1,0 +1,24 @@
+<head>
+    <title>Eric Marcanio</title>
+    <meta charset="utf-8">
+    <link href="Home.css" rel="stylesheet">
+    <script src="HexGuesser.js"></script>
+
+</head>
+
+<body>
+    <div id="RandomColor">
+
+    </div>
+    <h1>Hex Guess</h1>
+
+    <img class="image">
+    <div id="inputBox" style="display:none;">
+        <label for="HexNumber">Hex Color: #</label>
+        <input onkeyup="addHyphen(this);" type="text" id="HexNumber" placeholder="RR GG BB"><br><br>
+    </div>
+    <button onclick="startGame();" class="btn play">Start game</button>
+
+
+
+</body>
