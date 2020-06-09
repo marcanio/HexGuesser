@@ -28,6 +28,16 @@ h1 {
     position: fixed;
 }
 
+h2 {
+    color: darkgray;
+    font-size: 2rem;
+    display: block;
+    width: 100%;
+    text-align: center;
+    top: 300px;
+    position: fixed;
+}
+
 @media screen and (max-width: 600px) {
     h1 {
         font-size: 3rem;

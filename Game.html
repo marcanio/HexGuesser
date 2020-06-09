@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+
+<head>
+    <title>Hex Guess</title>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link href="Home.css" rel="stylesheet">
+    <script src="HexGuesser.js"></script>
+
+</head>
+
+
+<body>
+
+    <h1>Hex Guess</h1>
+
+    <div class="image" id="RandomColor">
+
+    </div>
+
+    <div id='x' style='font-size:480px;text-align:center;margin:-30 0 0 0'>5</div>
+
+    <script>
+        let x = 6;
+
+        function next() {
+
+            if (x <= 0) {
+                window.location.href = "ColorSelector.html";
+            } else {
+                x--;
+                document.getElementById("x").innerHTML = (x);
+                setTimeout('next()', 1000);
+            }
+
+        }
+        next();
+    </script>
+
+
+</body>
